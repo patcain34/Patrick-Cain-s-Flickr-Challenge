@@ -15,13 +15,15 @@ import com.flickr4java.flickr.photos.PhotosInterface;
 import com.flickr4java.flickr.photos.SearchParameters;
 
 public class Main {
-
+	// One enhancement I didn't get around to is making the main function a
+	// stub,
+	// which would call a sequence of functions
 	public static void main(String[] args) throws FlickrException {
 		// my flickr api info
 		String apiKey = "1e35642e7e515bd2cc900c8072b4e218";
 		String sharedSecret = "91846b0bc921eec4";
 
-		// TODO: add functionality for inputing multiple tags
+		// TODO: add functionality for inputting multiple tags
 		String[] tags = new String[1];
 		// Prompts user to input the tag they want to search by
 		Scanner scan = new Scanner(System.in);
@@ -43,8 +45,9 @@ public class Main {
 
 		// helper variables
 		int i = 0;
-		String path;
-		int decision;
+		String path = "http://www.lotame.com/"; // initialized so Lotame is
+												// default
+		int decision = 0;
 
 		// Loop to control list of photos
 		while (i < picList.size()) {
